@@ -15,7 +15,7 @@ function renderCart() {
 
   cartList.innerHTML = "";
 
-  cart.forEach((item, index) => {
+cart.forEach((item, index) => {
     const li = document.createElement("li");
     li.textContent = `${index + 1}. ${item.name} - ₹${item.price}`;
     cartList.appendChild(li);
@@ -31,4 +31,5 @@ function cartAnimation() {
   void cartSection.offsetWidth; // reset animation
   cartSection.classList.add("cart-animate");
 }
+
 
